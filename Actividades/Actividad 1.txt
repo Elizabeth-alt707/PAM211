@@ -1,0 +1,61 @@
+import java.util.Scanner;
+
+public class InicioPAM {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int opcion;
+
+        do {
+            System.out.println("== PAM ==");
+            System.out.println("1. Reglamento POO");
+            System.out.println("2. Lineamientos classroom");
+            System.out.println("3. Fechas de parciales");
+            System.out.println("4. Porcentajes por parcial");
+            System.out.println("5. Salir");
+            System.out.print("Elige una opción: ");
+            
+            opcion = scanner.nextInt();
+
+            switch (opcion) {
+                case 1:
+                    System.out.println("1. Respeto");
+                    System.out.println("2. Importante participación activa en orden");
+                    System.out.println("3. No entregar trabajos incompletos");
+                    System.out.println("4. No se aplican exámenes fuera de tiempo");
+                    System.out.println("5. Plagio de trabajos = 0 para todos");
+                    System.out.println("6. 3 faltas = Final del parcial");
+                    System.out.println("7. Calificación máxima en final = 8");
+                    break;
+
+                case 2:
+                    System.out.println("Entregar los trabajos para su revisión");
+                    System.out.println("Entregas en PDF");
+                    System.out.println("Avisos de clase");
+                    System.out.println("Entregas autorizadas con retraso");
+                    System.out.println("Calificación máxima: 5");
+                    break;
+
+                case 3:
+                    System.out.println("P1: 29/09/25, P2: 03/11/25, P3: 01/12/25, Final: 08/12/25");
+                    break;
+
+                case 4:
+                    System.out.println("Conocimiento: P1 40%, P2 40%, P3 20%");
+                    System.out.println("Desempeño: P1 10%, P2 20%, P3 30%");
+                    System.out.println("Evidencia de producto: P1 30%, P2 20%, P3 40%");
+                    System.out.println("Proyecto integrador: P1 10%, P2 20%, P3 30%");
+                    break;
+
+                case 5:
+                    System.out.println("Saliendo de PAM...");
+                    break;
+
+                default:
+                    System.out.println("Opción no válida, intenta de nuevo.");
+            }
+
+        } while (opcion != 5);
+
+        scanner.close();
+    }
+}
