@@ -1,4 +1,3 @@
-
 //1.zona importaciones
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Button } from 'react-native';
@@ -14,10 +13,12 @@ export default function ContadorScreen() {
     
     <View style={styles.container}>
 
+     
       <Text style={styles.texto1}>Contador: {contador} </Text>
-      <Text style={styles.texto1}> {contador} </Text>
+      <Text style={styles.texto1}> Valor actual: {contador} </Text> 
 
-      <View style={styles.botonesCountainer}>
+   
+      <View style={styles.botonesContainer}>
       <Button color='red' title='Agregar' onPress={()=>setContador(contador + 1)}/>
       <Button color='pink' title='Quitar' onPress={()=>setContador(contador - 1)}/>
       <Button color='blue' title='Reiniciar' onPress={()=>setContador(0)}/>
@@ -31,25 +32,25 @@ export default function ContadorScreen() {
 //3. zona de los estilos
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex:1,
     backgroundColor: '#8a768aff',
     alignItems: 'center', //eje x
     justifyContent: 'center',  //eje y
   },
 
   texto1:{
-    color: '#f7b1f7ff',
-    fontSize:30,
-    fontFamily:'Times New Roman',
-    fontWeight:'bold',
-    fontStyle:'italic',
-    textDecorationLine:'line-through',
+    color: '#f7b1f7ff', // Cambia el color del texto.
+    fontSize:30,  // Tamaño de la fuente, medido en puntos.
+    fontFamily: 'serif', // Tipo de letra
+    fontWeight:'bold', // texto sea **negrita**.
+    fontStyle:'italic',  // Aplica **cursiva** 
+    textDecorationLine:'line-through', // Dibuja una línea que **tacha** el texto.
   },
 
-  botonesCountainer:{
+  botonesContainer:{
     marginTop:15, //margen 
-    flexDirection:'row', //default
-    gap:20,
+    flexDirection:'row', //Organiza los elementos
+    gap:20, // Propiedad moderna de estilo para espaciado entre elementos
   },
 
 
