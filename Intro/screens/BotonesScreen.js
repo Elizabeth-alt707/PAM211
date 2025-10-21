@@ -1,6 +1,7 @@
 import React, {use, useState} from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Switch } from 'react-native';
 
+//Declaracion del componente
 export default function botonesScreen() {
   const [prendido, setPrendido] = useState(false);
 
