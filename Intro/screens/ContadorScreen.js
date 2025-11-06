@@ -13,7 +13,7 @@ export default function ContadorScreen() {
     
     <View style={styles.container}>
 
-     
+     PS C:\PAM211> 
       <Text style={styles.texto1}>Contador: {contador} </Text>
       <Text style={styles.texto1}> Valor actual: {contador} </Text> 
 

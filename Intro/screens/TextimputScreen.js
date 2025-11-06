@@ -48,7 +48,7 @@ const mostrarAlerta = () => {
       <Button color='blue'  title="Mostrar saludo" onPress={mostrarAlerta} />
     </View>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {

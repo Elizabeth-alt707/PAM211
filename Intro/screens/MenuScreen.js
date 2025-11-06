@@ -5,6 +5,9 @@ import ContadorScreen from './ContadorScreen';
 import TextimputScreen from './TextimputScreen';
 import ImageBackgroundScreen from './ImageBackgroundScreen';
 import ScrollViewScreen from './ScrollViewScreen';
+import ActivityScreen from './ActivityScreen';
+import ListasScreen from './ListasScreen';
+import IntentoScreen from './IntentoScreen';
 
 export default function MenuScreen () {
   const [screen,setScreen]= useState('menu');
@@ -20,6 +23,12 @@ export default function MenuScreen () {
       return <ImageBackgroundScreen/>;
       case'scrollview':
       return <ScrollViewScreen/>;
+      case 'activity':
+        return <ActivityScreen/>;
+        case 'lista':
+          return <ListasScreen/>;
+          case 'intento':
+            return <IntentoScreen/>;
       case 'menu':
         default:
          return (
@@ -30,7 +39,9 @@ export default function MenuScreen () {
              <Button onPress={()=>setScreen('textimput')} title='Practica:TextImput'></Button>
              <Button onPress={()=>setScreen('imagebackground')} title='Practica:ImageBackground'></Button>
              <Button onPress={()=>setScreen('scrollview')} title='Practica:ScrollView'></Button>
-
+             <Button onPress={()=>setScreen('activity')} title='Practica:Activity'></Button>
+              <Button onPress={()=>setScreen('lista')} title='Practica:Lista'></Button>
+              <Button onPress={()=>setScreen('intento')} title='Practica:Intento'></Button>
          </View>
     )
 
