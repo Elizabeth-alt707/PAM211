@@ -5,8 +5,7 @@ import TextimputScreen from './TextimputScreen';
 import ImageBackgroundScreen from './ImageBackgroundScreen';
 import ScrollViewScreen from './ScrollViewScreen';
 import ActivityScreen from './ActivityScreen';
-import ListasScreen from './ListasScreen';
-import IntentoScreen from './IntentoScreen';
+import ListaScreen from './ListaScreen';
 import ModalScreen from './ModalScreen';
 
 export default function MenuScreen () {
@@ -24,9 +23,7 @@ export default function MenuScreen () {
       case 'activity':
         return <ActivityScreen/>;
         case 'lista':
-          return <ListasScreen/>;
-          case 'intento':
-            return <IntentoScreen/>;
+          return <ListaScreen/>;
             case 'modal':
               return <ModalScreen/>;  
       case 'menu':
@@ -40,7 +37,6 @@ export default function MenuScreen () {
              <Button onPress={()=>setScreen('scrollview')} title='Practica:ScrollView'></Button>
              <Button onPress={()=>setScreen('activity')} title='Practica:Activity'></Button>
               <Button onPress={()=>setScreen('lista')} title='Practica:Lista'></Button>
-              <Button onPress={()=>setScreen('intento')} title='Practica:Intento'></Button>
               <Button onPress={()=>setScreen('modal')} title='Practica:Modal'></Button>
          </View>
     )
